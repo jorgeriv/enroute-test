@@ -1,3 +1,3 @@
 module.exports = {
-  projects: ['<rootDir>/apps/test'],
+  projects: ['<rootDir>/apps/test', '<rootDir>/libs/data-access/swapi'],
 };

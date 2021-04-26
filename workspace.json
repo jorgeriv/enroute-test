@@ -1,23 +1,12 @@
 {
   "version": 2,
-  "cli": {
-    "defaultCollection": "@nrwl/react"
-  },
+  "cli": { "defaultCollection": "@nrwl/react" },
   "defaultProject": "test",
   "generators": {
     "@nrwl/react": {
-      "application": {
-        "style": "scss",
-        "linter": "eslint",
-        "babel": true
-      },
-      "component": {
-        "style": "scss"
-      },
-      "library": {
-        "style": "scss",
-        "linter": "eslint"
-      }
+      "application": { "style": "scss", "linter": "eslint", "babel": true },
+      "component": { "style": "scss" },
+      "library": { "style": "scss", "linter": "eslint" }
     }
   },
   "projects": {
@@ -67,20 +56,14 @@
         },
         "serve": {
           "executor": "@nrwl/web:dev-server",
-          "options": {
-            "buildTarget": "test:build"
-          },
+          "options": { "buildTarget": "test:build" },
           "configurations": {
-            "production": {
-              "buildTarget": "test:build:production"
-            }
+            "production": { "buildTarget": "test:build:production" }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/test/**/*.{ts,tsx,js,jsx}"]
-          }
+          "options": { "lintFilePatterns": ["apps/test/**/*.{ts,tsx,js,jsx}"] }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -105,15 +88,32 @@
             "devServerTarget": "test:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "test:serve:production"
-            }
+            "production": { "devServerTarget": "test:serve:production" }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["apps/test-e2e/**/*.{js,ts}"] }
+        }
+      }
+    },
+    "data-access-swapi": {
+      "root": "libs/data-access/swapi",
+      "sourceRoot": "libs/data-access/swapi/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/test-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": ["libs/data-access/swapi/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/data-access/swapi"],
+          "options": {
+            "jestConfig": "libs/data-access/swapi/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }
