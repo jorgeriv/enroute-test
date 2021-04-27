@@ -1,1 +1,1 @@
-export * from './lib/data-access-swapi';
+export * from './lib/redux';

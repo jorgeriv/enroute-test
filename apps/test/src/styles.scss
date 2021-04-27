@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    button {
+        background-color: rebeccapurple;
+        border: none;
+        color: white;
+        padding: 0.8em 1.6em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        &[disabled]{
+          background-color: #8871a0;
+          cursor:default;
+        }
+      }
+}

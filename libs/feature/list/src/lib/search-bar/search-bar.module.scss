@@ -1,0 +1,11 @@
+.searchBar{
+    margin: 1em 0;
+    display: flex;
+    input{
+        width: 30em;
+        margin-right: 1em;
+    }
+    & > * {
+        flex: 1 1 auto
+    }
+}

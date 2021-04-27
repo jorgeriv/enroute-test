@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 
-import FeatureList from './feature-list';
+import { PeopleList } from './list';
 
-describe('FeatureList', () => {
+describe('PeopleList', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<FeatureList />);
+    const { baseElement } = render(<PeopleList />);
     expect(baseElement).toBeTruthy();
   });
 });
