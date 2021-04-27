@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@enroute/data-access/swapi": ["libs/data-access/swapi/src/index.ts"]
+      "@enroute/data-access/swapi": ["libs/data-access/swapi/src/index.ts"],
+      "@enroute/feature/list": ["libs/feature/list/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

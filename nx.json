@@ -14,6 +14,7 @@
   "projects": {
     "test": { "tags": [] },
     "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
-    "data-access-swapi": { "tags": [] }
+    "data-access-swapi": { "tags": [] },
+    "feature-list": { "tags": [] }
   }
 }
